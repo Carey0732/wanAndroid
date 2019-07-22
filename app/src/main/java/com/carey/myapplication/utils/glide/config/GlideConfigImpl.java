@@ -2,7 +2,6 @@ package com.carey.myapplication.utils.glide.config;
 
 import android.graphics.drawable.Drawable;
 import android.widget.ImageView;
-
 import com.bumptech.glide.load.DecodeFormat;
 import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
 import com.bumptech.glide.request.RequestListener;

@@ -1,18 +1,16 @@
 package com.carey.myapplication.utils.glide.http;
 
+import javax.net.ssl.*;
 import java.security.SecureRandom;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 
-import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.SSLSession;
-import javax.net.ssl.TrustManager;
-import javax.net.ssl.X509TrustManager;
-
 public class SSLSocketClient {
 
-    //获取这个SSLSocketFactory
+    /**
+     * 获取这个SSLSocketFactory
+     */
+
     public static javax.net.ssl.SSLSocketFactory getSSLSocketFactory() {
         try {
             SSLContext sslContext = SSLContext.getInstance("SSL");
@@ -23,13 +21,17 @@ public class SSLSocketClient {
         }
     }
 
-    //获取TrustManager
+    /**
+     * 获取TrustManager
+     */
     private static TrustManager[] getTrustManagers() {
         TrustManager[] trustAllCerts = new TrustManager[]{getTrustManager()};
         return trustAllCerts;
     }
 
-    //获取HostnameVerifier
+    /**
+     * 获取HostnameVerifier
+     */
     public static HostnameVerifier getHostnameVerifier() {
         HostnameVerifier hostnameVerifier = new HostnameVerifier() {
             @Override

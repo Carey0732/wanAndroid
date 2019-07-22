@@ -16,7 +16,6 @@ import android.widget.ProgressBar;
 import com.carey.myapplication.R;
 import com.carey.myapplication.utils.glide.util.Utils;
 
-
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 

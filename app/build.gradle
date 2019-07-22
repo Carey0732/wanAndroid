@@ -12,10 +12,21 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            zipAlignEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "BASE_ANDROID_URL", "\"https://www.wanandroid.com\""
+            buildConfigField "String", "BASE_GANK_URL", "\" http://gank.io\""
+        }
+        debug{
+            minifyEnabled false
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "BASE_ANDROID_URL", "\"https://www.wanandroid.com\""
+            buildConfigField "String", "BASE_GANK_URL", "\"http://gank.io\""
         }
     }
     compileOptions {

@@ -16,17 +16,15 @@
 package com.carey.myapplication.utils.glide.http;
 
 import android.support.annotation.NonNull;
-
 import com.bumptech.glide.load.Options;
 import com.bumptech.glide.load.model.GlideUrl;
 import com.bumptech.glide.load.model.ModelLoader;
 import com.bumptech.glide.load.model.ModelLoaderFactory;
 import com.bumptech.glide.load.model.MultiModelLoaderFactory;
-
-import java.io.InputStream;
-
 import okhttp3.Call;
 import okhttp3.OkHttpClient;
+
+import java.io.InputStream;
 
 /**
  * A simple model loader for fetching media over http/https using OkHttp.

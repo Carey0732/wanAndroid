@@ -3,16 +3,11 @@ package com.carey.myapplication.utils.glide.progress;
 import android.os.Handler;
 import android.os.Looper;
 import android.support.annotation.NonNull;
-
-import java.io.IOException;
-
 import okhttp3.MediaType;
 import okhttp3.ResponseBody;
-import okio.Buffer;
-import okio.BufferedSource;
-import okio.ForwardingSource;
-import okio.Okio;
-import okio.Source;
+import okio.*;
+
+import java.io.IOException;
 
 /**
  * 计算进度

@@ -1,12 +1,11 @@
 package com.carey.myapplication.utils.glide.progress;
 
 import android.text.TextUtils;
-
-import java.util.concurrent.ConcurrentHashMap;
-
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
+
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 进度监听器管理类
