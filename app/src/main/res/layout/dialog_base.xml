@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:background="@drawable/shape_dialog_round_write"
+              android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            tools:text="确认隐藏评论？"/>
+
+    <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:visibility="gone"
+            android:textColor="@color/color_222222"
+            android:textSize="@dimen/sp_14"
+            tools:text="400888579"/>
+
+    <FrameLayout
+            android:id="@+id/fl_dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/color_b7b7b7"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/btn_negative"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/color_222222"
+                android:textSize="@dimen/sp_16"/>
+
+        <View
+                android:id="@+id/view"
+                android:layout_width="0.8dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_b7b7b7"/>
+
+        <TextView
+                android:id="@+id/btn_positive"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/sure"
+                android:textColor="@color/color_3d84e6"
+                android:textSize="@dimen/sp_16"/>
+    </LinearLayout>
+
+</LinearLayout>

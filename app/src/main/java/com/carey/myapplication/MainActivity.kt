@@ -2,6 +2,7 @@ package com.carey.myapplication
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.carey.myapplication.utils.BaseDialog
 
 class MainActivity : AppCompatActivity() {
 
