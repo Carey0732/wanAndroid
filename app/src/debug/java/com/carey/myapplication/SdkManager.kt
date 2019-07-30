@@ -22,7 +22,6 @@ object SdkManager {
     }
 
     fun getHttpClient(): OkHttpClient {
-        Stetho.initializeWithDefaults(App.getContext())
         return OkHttpClient.Builder()
             .connectTimeout(CONNECT_TIMEOUT, TimeUnit.SECONDS)
             .readTimeout(IO_TIMEOUT, TimeUnit.SECONDS)
